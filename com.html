@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community | ECHOES</title>
+    <link rel="stylesheet" href="cssec.css">
+</head>
+<body>
+    <header class="header">
+        <a href="com.html" class="logo">ECHOES<span>.</span></a>
+        <nav>
+            <a href="com.html">Inicio</a>
+            <a href="#publicaciones">Explorar</a>
+            <a href="log.html" id="account-link">Iniciar sesión</a>
+        </nav>
+    </header>
+    <main class="community-layout">
+        <aside class="sidebar">
+            <p class="eyebrow">MENU</p>
+            <a class="active" href="com.html">⌂ Inicio</a>
+            <a href="#publicaciones">◉ Explorar</a>
+            <a href="#crear-publicacion">＋ Compartir</a>
+            <a href="#categorias">☰ Categorías</a>
+            <div class="sidebar-bottom">
+                <p class="muted">ECHOES COMMUNITY</p>
+                <p class="muted">Your music. Your people.</p>
+            </div>
+        </aside>
+        <section class="feed">
+            <div class="feed-heading">
+                <p class="eyebrow">YOUR MUSIC SPACE</p>
+                <h1>Buenas noches<span>.</span></h1>
+                <p class="muted">¿Qué está sonando en tu mundo?</p>
+            </div>
+            <section class="create-post" id="crear-publicacion">
+                <h2>Comparte algo con la comunidad</h2>
+                <form id="post-form">
+                    <select id="post-category">
+                        <option value="General">General</option>
+                        <option value="Música">Música</option>
+                        <option value="Debate">Debate</option>
+                        <option value="Recomendación">Recomendación</option>
+                    </select>
+                    <input type="text" id="post-title" placeholder="Título de tu publicación" required maxlength="100">
+                    <textarea id="post-content" placeholder="Escribe lo que quieras compartir..." required maxlength="1000"></textarea>
+                    <button type="submit" class="button">Publicar</button>
+                    <p id="post-message" class="message"></p>
+                </form>
+            </section>
+            <section id="publicaciones">
+                <div class="section-heading">
+                    <h2>Actividad reciente</h2>
+                    <span class="muted">Comunidad</span>
+                </div>
+                <div id="posts-container"></div>
+            </section>
+        </section>
+        <aside class="right-sidebar" id="categorias">
+            <div class="side-card">
+                <p class="eyebrow">EXPLORE</p>
+                <h3>Un mundo de música.</h3>
+                <p class="muted">Descubre conversaciones, recomendaciones y nuevas perspectivas.</p>
+            </div>
+            <div class="side-card">
+                <p class="eyebrow">ABOUT</p>
+                <h3>ECHOES Community</h3>
+                <p class="muted">Un espacio para compartir lo que la música significa para nosotros.</p>
+            </div>
+        </aside>
+    </main>
+    <script src="publ.js"></script>
+</body>
+</html>

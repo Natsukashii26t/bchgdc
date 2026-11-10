@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil | ECHOES</title>
+    <link rel="stylesheet" href="cssec.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="com.html" class="logo">ECHOES<span>.</span></a>
+
+        <nav>
+            <a href="com.html">Comunidad</a>
+            <a href="portada.html">Salir</a>
+        </nav>
+    </header>
+
+    <main class="profile-layout">
+
+        <section class="profile-card">
+            <div class="profile-cover"></div>
+
+            <div class="profile-content">
+                <div class="profile-avatar" id="profile-avatar">
+                    <span>♫</span>
+                </div>
+
+                <div class="profile-heading">
+                    <h1 id="profile-name">@usuario</h1>
+                    <p id="profile-username" class="muted"></p>
+                    <p id="profile-date" class="muted"></p>
+                </div>
+
+                <p id="profile-bio" class="profile-bio">
+                    Este usuario todavía no tiene una biografía.
+                </p>
+
+                <div class="profile-stats">
+                    <div>
+                        <strong id="profile-post-count">0</strong>
+                        <span>Publicaciones</span>
+                    </div>
+                    <div>
+                        <strong id="profile-followers">0</strong>
+                        <span>Seguidores</span>
+                    </div>
+                    <div>
+                        <strong id="profile-following">0</strong>
+                        <span>Siguiendo</span>
+                    </div>
+                </div>
+
+                <button id="edit-profile-button" class="button" hidden>
+                    Editar perfil
+                </button>
+
+                <button id="follow-button" class="button" hidden>
+                    Seguir
+                </button>
+            </div>
+        </section>
+
+        <section class="profile-details">
+            <div class="side-card">
+                <p class="eyebrow">MUSIC TASTE</p>
+                <h2>Artistas favoritos</h2>
+                <div id="profile-artists" class="artist-list">
+                    <span class="muted">Todavía no hay artistas.</span>
+                </div>
+            </div>
+
+            <div class="side-card">
+                <p class="eyebrow">ACTIVITY</p>
+                <h2>Publicaciones</h2>
+                <div id="profile-posts"></div>
+            </div>
+        </section>
+
+        <section class="edit-profile-card" id="edit-profile-card" hidden>
+            <div class="section-heading">
+                <h2>Editar mi perfil</h2>
+                <button id="close-editor" class="close-button">✕</button>
+            </div>
+
+            <form id="profile-form">
+                <label for="edit-name">Nombre visible</label>
+                <input
+                    type="text"
+                    id="edit-name"
+                    maxlength="30"
+                    placeholder="¿Cómo quieres que te conozcan?"
+                >
+
+                <label for="profile-photo">Foto de perfil</label>
+                <input type="file" id="profile-photo" accept="image/*">
+
+                <label for="edit-bio">Biografía</label>
+                <textarea id="edit-bio" maxlength="250" placeholder="Cuéntanos algo sobre ti..."></textarea>
+
+                <label for="edit-artists">Artistas favoritos</label>
+                <input type="text" id="edit-artists" placeholder="ENHYPEN, Joji, DPR IAN...">
+
+                <button type="submit" class="button">Guardar cambios</button>
+                <p id="profile-message" class="message"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <script src="profiles.js"></script>
+</body>
+</html>

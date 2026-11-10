@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta | ECHOES</title>
+    <link rel="stylesheet" href="cssec.css">
+</head>
+<body>
+    <header class="header">
+        <a href="portada.html" class="logo">ECHOES<span>.</span></a>
+        <a href="log.html">Iniciar sesión</a>
+    </header>
+    <main class="auth-container">
+        <div class="auth-card">
+            <p class="eyebrow">JOIN THE COMMUNITY</p>
+            <h1>Encuentra tu espacio.</h1>
+            <p class="muted">Crea tu cuenta y empieza a compartir.</p>
+            <form id="register-form">
+                <label for="username">Nombre de usuario</label>
+                <input type="text" id="username" required minlength="3" maxlength="20" placeholder="Tu nombre">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" required placeholder="correo@ejemplo.com">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" required minlength="6" placeholder="Mínimo 6 caracteres">
+                <p id="auth-message" class="message"></p>
+                <button type="submit" class="button full-button">
+                    Crear mi cuenta
+                </button>
+            </form>
+            <p class="auth-switch">
+                ¿Ya tienes cuenta?
+                <a href="log.html">Inicia sesión</a>
+            </p>
+        </div>
+    </main>
+    <script src="regsses.js"></script>
+</body>
+</html>
